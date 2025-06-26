@@ -49,23 +49,30 @@ const AppRoutes = () => {
   );
 };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          {/* Health check message */}
-          <div style={{ padding: "1rem", textAlign: "center", background: "#f0f0f0" }}>
-            Backend is running fine on Render!
-          </div>
+const App = () => {
+  const healthMessage = {
+    status: "ok",
+    message: "Backend is running fine on Render!",
+  };
 
-          <AppRoutes />
-        </BrowserRouter>
-      </TooltipProvider>
-    </AuthProvider>
-  </QueryClientProvider>
-);
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            {/* Health check message as JSON */}
+            <pre style={{ padding: "1rem", textAlign: "center", background: "#f0f0f0" }}>
+              {JSON.stringify(healthMessage, null, 2)}
+            </pre>
+
+            <AppRoutes />
+          </BrowserRouter>
+        </TooltipProvider>
+      </AuthProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
