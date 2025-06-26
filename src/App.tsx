@@ -50,10 +50,10 @@ const AppRoutes = () => {
 };
 
 const App = () => {
-  const healthMessage = {
-    status: "ok",
-    message: "Backend is running fine on Render!",
-  };
+  // const healthMessage = {
+  //   status: "ok",
+  //   message: "Backend is running fine on Render!",
+  // };
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -63,9 +63,9 @@ const App = () => {
           <Sonner />
           <BrowserRouter>
             {/* Health check message as JSON */}
-            <pre style={{ padding: "1rem", textAlign: "center", background: "#f0f0f0" }}>
+            {/* <pre style={{ padding: "1rem", textAlign: "center", background: "#f0f0f0" }}>
               {JSON.stringify(healthMessage, null, 2)}
-            </pre>
+            </pre> */}
 
             <AppRoutes />
           </BrowserRouter>
