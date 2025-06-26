@@ -56,6 +56,11 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          {/* Health check message */}
+          <div style={{ padding: "1rem", textAlign: "center", background: "#f0f0f0" }}>
+            Backend is running fine on Render!
+          </div>
+
           <AppRoutes />
         </BrowserRouter>
       </TooltipProvider>
