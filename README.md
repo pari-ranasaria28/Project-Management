@@ -15,14 +15,14 @@ A collaborative bug and issue tracking web application — inspired by tools lik
 ✅ Threaded ticket comments  
 ✅ JWT-based user authentication  
 ✅ Responsive and modern UI  
-✅ Optional: File uploads, role-based access
+✅ Role-based access
 
 ---
 
 ## 🔗 Live Demo
 
-👉 [View Deployed App](https://your-deployed-url.com)  
-📁 [GitHub Repository](https://github.com/yourusername/bug-tracker)
+👉 [View Deployed App](https://project-management-lovat-seven.vercel.app/)  
+📁 [GitHub Repository](https://github.com/pari-ranasaria28/Project-Management/)
 
 ---
 
@@ -72,15 +72,8 @@ A collaborative bug and issue tracking web application — inspired by tools lik
 - ✅ **Responsive UI across devices**  
 - ✅ **Functional drag-and-drop Kanban board**  
 - ✅ **Ticket creation with filters & assignment**  
-- 🔄 Optional: Comments, file upload, role-based access  
+- 🔄 **Comments, role-based access**
 
 ---
 
-## 📸 Screenshots
-
-| Dashboard | Kanban View | Create Ticket |
-|----------|-------------|---------------|
-| ![Dashboard](screenshots/dashboard.png) | ![Kanban](screenshots/kanban.png) | ![Create Ticket](screenshots/create_ticket.png) |
-
----
 
